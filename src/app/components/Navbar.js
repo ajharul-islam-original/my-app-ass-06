@@ -45,7 +45,6 @@ export default function Navbar() {
     <header className="border-b border-[#1b1d21] bg-[#090a0d]">
       <div className="mx-auto flex h-[104px] max-w-[1500px] items-center justify-between px-6 md:px-8">
 
-        {/* Logo */}
         <Link href="/" className="flex items-center gap-3">
           <div className="flex h-9 w-9 items-center justify-center">
             <Image
@@ -62,10 +61,8 @@ export default function Navbar() {
           </span>
         </Link>
 
-        {/* ================= DESKTOP NAVIGATION ================= */}
         <nav className="hidden items-center gap-2 md:flex">
 
-          {/* Workouts */}
           <Link
             href="/"
             className={`rounded-full px-5 py-2.5 text-[14px] font-semibold transition ${
@@ -77,7 +74,6 @@ export default function Navbar() {
             Workouts
           </Link>
 
-          {/* My Plan */}
           <Link
             href="/plan"
             className={`rounded-full px-5 py-2.5 text-[14px] font-semibold transition ${
@@ -91,10 +87,8 @@ export default function Navbar() {
 
         </nav>
 
-        {/* ================= RIGHT SIDE ================= */}
         <div className="hidden items-center gap-7 md:flex">
 
-          {/* Plan */}
           <Link
             href="/plan"
             className="flex items-center gap-2 text-[14px] text-[#858891] transition hover:text-white"
@@ -106,7 +100,6 @@ export default function Navbar() {
             </span>
           </Link>
 
-          {/* Saved */}
           <Link
             href="/plan"
             className="flex items-center gap-2 text-[14px] text-[#858891] transition hover:text-white"
@@ -120,7 +113,6 @@ export default function Navbar() {
 
         </div>
 
-        {/* ================= MOBILE MENU BUTTON ================= */}
         <button
           type="button"
           onClick={() => setMenuOpen(!menuOpen)}
@@ -136,12 +128,10 @@ export default function Navbar() {
 
       </div>
 
-      {/* ================= MOBILE NAVIGATION ================= */}
       {menuOpen && (
         <div className="border-t border-[#1b1d21] px-6 py-5 md:hidden">
           <nav className="flex flex-col gap-2">
 
-            {/* Workouts */}
             <Link
               href="/"
               onClick={() => setMenuOpen(false)}
@@ -154,7 +144,6 @@ export default function Navbar() {
               Workouts
             </Link>
 
-            {/* My Plan */}
             <Link
               href="/plan"
               onClick={() => setMenuOpen(false)}
@@ -166,11 +155,8 @@ export default function Navbar() {
             >
               My Plan
             </Link>
-
-            {/* Plan + Saved */}
             <div className="mt-3 flex items-center justify-between border-t border-[#1b1d21] pt-4">
 
-              {/* Plan */}
               <Link
                 href="/plan"
                 className="flex items-center gap-2 text-[14px] text-[#858891] transition hover:text-white"
@@ -182,7 +168,6 @@ export default function Navbar() {
                 </span>
               </Link>
 
-              {/* Saved */}
               <Link
                 href="/plan"
                 className="flex items-center gap-2 text-[14px] text-[#858891] transition hover:text-white"

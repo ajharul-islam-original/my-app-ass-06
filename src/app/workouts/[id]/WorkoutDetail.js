@@ -112,7 +112,7 @@ useEffect(() => {
 
             <div className="flex flex-col">
 
-              {/* TITLE */}
+        
 
               <div>
                 <h1 className="text-4xl font-extrabold uppercase leading-[1.05] tracking-tight text-white sm:text-5xl xl:text-[30px]">
@@ -125,7 +125,7 @@ useEffect(() => {
                 </p>
               </div>
 
-              {/* TAGS */}
+        
 
               <div className="mt-6 flex flex-wrap gap-3">
                 {workout.muscleGroups?.map((muscle) => (
@@ -138,7 +138,7 @@ useEffect(() => {
                 ))}
               </div>
 
-              {/* INFORMATION CARD */}
+      
 
               <div className="mt-5 overflow-hidden rounded-2xl border border-[#282d37] bg-[#151922]">
 
@@ -188,7 +188,6 @@ useEffect(() => {
 
               </div>
 
-              {/* INSTRUCTIONS */}
 
               <div className="mt-4">
 
@@ -222,11 +221,9 @@ useEffect(() => {
 
               </div>
 
-              {/* BUTTONS */}
 
               <div className="mt-10 flex flex-col gap-4 sm:flex-row">
 
-                {/* ADD TO TODAY'S PLAN */}
 
                 <button
                   onClick={handleAddToPlan}
@@ -243,7 +240,6 @@ useEffect(() => {
                     : "Add to today's plan"}
                 </button>
 
-                {/* SAVE FOR LATER */}
 
                 <button
                   onClick={handleSave}
@@ -268,11 +264,6 @@ useEffect(() => {
   );
 }
 
-
-/* =========================================
-   INFORMATION ROW
-========================================= */
-
 function InfoRow({ title, value, last }) {
   return (
     <div
@@ -294,9 +285,6 @@ function InfoRow({ title, value, last }) {
 }
 
 
-/* =========================================
-   CALENDAR ICON
-========================================= */
 
 function CalendarIcon() {
   return (
@@ -345,11 +333,6 @@ function CalendarIcon() {
     </svg>
   );
 }
-
-
-/* =========================================
-   BOOKMARK ICON
-========================================= */
 
 function BookmarkIcon({ filled }) {
   return (

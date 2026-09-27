@@ -37,7 +37,7 @@ useEffect(() => {
   };
 }, []);
 
-  // anik
+
 
   function handleRemovePlan(id) {
     const newPlan = removeFromPlan(id);
@@ -153,7 +153,6 @@ useEffect(() => {
 
         </div>
 
-        {/* FILTER BAR */}
         <div className="mt-9 flex items-center justify-between">
 
           {/* TABS */}
@@ -183,7 +182,6 @@ useEffect(() => {
 
           </div>
 
-          {/* SORT */}
           <div className="flex items-center gap-3">
 
             <span className="text-sm text-[#858b97]">
@@ -204,7 +202,6 @@ useEffect(() => {
 
         </div>
 
-        {/* LIST */}
         {sortedItems.length === 0 ? (
 
           <div className="mt-7 flex min-h-[300px] flex-col items-center justify-center rounded-2xl border border-dashed border-[#292e38] bg-[#0e1014]">
@@ -259,10 +256,6 @@ useEffect(() => {
 }
 
 
-/* =========================================
-   EXERCISE CARD
-========================================= */
-
 function ExerciseCard({
   exercise,
   activeTab,
@@ -282,7 +275,6 @@ function ExerciseCard({
         />
       </div>
 
-      {/* INFO */}
       <div className="flex-1">
 
         <h3 className="text-xl font-extrabold uppercase">
@@ -320,10 +312,8 @@ function ExerciseCard({
 
       </div>
 
-      {/* ACTIONS */}
       <div className="flex items-center gap-4">
 
-        {/* VIEW DETAILS */}
         <Link
           href={`/workouts/${exercise.id}`}
           className="rounded-full border border-[#343a46] px-6 py-2.5 text-sm font-medium text-white transition hover:bg-[#1b2028]"
@@ -331,7 +321,7 @@ function ExerciseCard({
           View Details
         </Link>
 
-        {/* MARK DONE - ONLY TODAY */}
+      
         {activeTab === "today" && (
           <button
             onClick={onDone}
@@ -345,7 +335,7 @@ function ExerciseCard({
           </button>
         )}
 
-        {/* REMOVE */}
+       
         <button
           onClick={onRemove}
           className="px-1 text-2xl text-[#737984] transition hover:text-white"

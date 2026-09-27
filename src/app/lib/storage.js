@@ -24,7 +24,6 @@ export function getSaved() {
 export function addToPlan(workout) {
   const plan = getPlan();
 
-  // Already added
   if (
     plan.some(
       (item) => String(item.id) === String(workout.id)
@@ -37,7 +36,6 @@ export function addToPlan(workout) {
     };
   }
 
-  // Maximum 12
   if (plan.length >= 12) {
     return {
       success: false,
@@ -85,7 +83,6 @@ export function removeFromPlan(id) {
 export function addToSaved(workout) {
   const saved = getSaved();
 
-  // Already saved
   if (
     saved.some(
       (item) => String(item.id) === String(workout.id)
