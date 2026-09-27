@@ -54,7 +54,6 @@ export default async function Home() {
               </button>
             </div>
 
-            {/* RIGHT SIDE */}
             <div className="flex min-h-[350px] items-center justify-center p-8 lg:min-h-[520px] lg:p-12">
               <div className="flex min-h-[300px] w-full items-center justify-center rounded-xl border border-dashed ">
                 <img

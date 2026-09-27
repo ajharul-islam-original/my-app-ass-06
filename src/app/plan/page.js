@@ -107,7 +107,7 @@ useEffect(() => {
     <main className="min-h-screen bg-[#0d0f13] px-6 py-10 text-white md:px-10 lg:px-14">
       <div className="mx-auto max-w-[1450px]">
 
-        {/* HEADER */}
+       
         <div>
           <h1 className="text-4xl font-extrabold uppercase tracking-tight">
             My Plan
@@ -118,7 +118,7 @@ useEffect(() => {
           </p>
         </div>
 
-        {/* STATS */}
+       
         <div className="mt-8 grid grid-cols-3 overflow-hidden rounded-2xl border border-[#242933] bg-[#12151b]">
 
           <div className="border-r border-[#20242c] px-7 py-8">
@@ -155,7 +155,7 @@ useEffect(() => {
 
         <div className="mt-9 flex items-center justify-between">
 
-          {/* TABS */}
+        
           <div className="flex rounded-xl border border-[#242933] bg-[#12151b] p-1">
 
             <button
@@ -266,7 +266,6 @@ function ExerciseCard({
   return (
     <div className="flex min-h-[138px] items-center gap-5 rounded-2xl border border-[#252b35] bg-[#12151b] px-5 py-5">
 
-      {/* IMAGE */}
       <div className="h-[96px] w-[178px] shrink-0 overflow-hidden rounded-xl">
         <img
           src={exercise.image}

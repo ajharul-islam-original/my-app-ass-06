@@ -5,7 +5,6 @@ export default function WorkoutCard({ workout }) {
     <Link href={`/workouts/${workout.id}`} className="block">
       <article className="group overflow-hidden rounded-2xl border border-[#292b31] bg-[#15161a] transition duration-300 hover:-translate-y-1 hover:border-[#3a3d44]">
 
-        {/* IMAGE */}
         <div className="h-[350px] w-full overflow-hidden bg-[#101114]">
           <img
             src={workout.image}
