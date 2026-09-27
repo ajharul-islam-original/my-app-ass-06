@@ -1,4 +1,4 @@
-# 🏋️ FitLog - Gym Workout Planner
+# 🏋️  FitLog - Gym Workout Planner 
 
 FitLog is a modern gym workout planner that helps users explore different exercises, view detailed workout information, create a daily workout plan, and save workouts for later.
 
@@ -8,9 +8,7 @@ FitLog is a modern gym workout planner that helps users explore different exerci
 - React.js
 - JavaScript
 - Tailwind CSS
-- Local Storage
-- HTML5
-- CSS3
+
 
 ## ✨ Key Features
 
@@ -32,8 +30,3 @@ Users can mark exercises as completed and remove workouts from their daily plan 
 ## 📁 Project Overview
 
 FitLog is designed with a clean and responsive interface to make workout planning simple and convenient. Users can browse workouts, check detailed exercise information, organize their daily plan, and save workouts for future use.
-
----
-
-### 💪 FitLog
-**Plan your workout. Track your progress. Stay consistent.**
